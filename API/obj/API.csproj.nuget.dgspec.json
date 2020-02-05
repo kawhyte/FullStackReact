@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kenren/Documents/FullStackReact/API/API.csproj": {}
+    "/Users/Kenny/FullStackReact/FullStackReact/API/API.csproj": {}
   },
   "projects": {
-    "/Users/kenren/Documents/FullStackReact/API/API.csproj": {
+    "/Users/Kenny/FullStackReact/FullStackReact/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kenren/Documents/FullStackReact/API/API.csproj",
+        "projectUniqueName": "/Users/Kenny/FullStackReact/FullStackReact/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/kenren/Documents/FullStackReact/API/API.csproj",
-        "packagesPath": "/Users/kenren/.nuget/packages/",
-        "outputPath": "/Users/kenren/Documents/FullStackReact/API/obj/",
+        "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/API/API.csproj",
+        "packagesPath": "/Users/Kenny/.nuget/packages/",
+        "outputPath": "/Users/Kenny/FullStackReact/FullStackReact/API/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/kenren/.nuget/NuGet/NuGet.Config"
+          "/Users/Kenny/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -24,7 +27,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/Kenny/FullStackReact/FullStackReact/Application/Application.csproj": {
+                "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Application/Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -35,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -50,6 +63,186 @@
               "privateAssets": "none"
             },
             "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Kenny/FullStackReact/FullStackReact/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Kenny/FullStackReact/FullStackReact/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Application/Application.csproj",
+        "packagesPath": "/Users/Kenny/.nuget/packages/",
+        "outputPath": "/Users/Kenny/FullStackReact/FullStackReact/Application/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/Kenny/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj": {
+                "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj"
+              },
+              "/Users/Kenny/FullStackReact/FullStackReact/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Persistence/Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj",
+        "packagesPath": "/Users/Kenny/.nuget/packages/",
+        "outputPath": "/Users/Kenny/FullStackReact/FullStackReact/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/Kenny/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Kenny/FullStackReact/FullStackReact/Persistence/Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Kenny/FullStackReact/FullStackReact/Persistence/Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/Kenny/.nuget/packages/",
+        "outputPath": "/Users/Kenny/FullStackReact/FullStackReact/Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/Kenny/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj": {
+                "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },

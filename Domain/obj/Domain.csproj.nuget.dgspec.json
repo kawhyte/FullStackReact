@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kenren/Documents/FullStackReact/Domain/Domain.csproj": {}
+    "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj": {}
   },
   "projects": {
-    "/Users/kenren/Documents/FullStackReact/Domain/Domain.csproj": {
+    "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kenren/Documents/FullStackReact/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/kenren/Documents/FullStackReact/Domain/Domain.csproj",
-        "packagesPath": "/Users/kenren/.nuget/packages/",
-        "outputPath": "/Users/kenren/Documents/FullStackReact/Domain/obj/",
+        "projectPath": "/Users/Kenny/FullStackReact/FullStackReact/Domain/Domain.csproj",
+        "packagesPath": "/Users/Kenny/.nuget/packages/",
+        "outputPath": "/Users/Kenny/FullStackReact/FullStackReact/Domain/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/kenren/.nuget/NuGet/NuGet.Config"
+          "/Users/Kenny/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -34,15 +37,7 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
+        "netstandard2.1": {
           "imports": [
             "net461",
             "net462",
@@ -53,6 +48,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.102/RuntimeIdentifierGraph.json"
         }
       }
